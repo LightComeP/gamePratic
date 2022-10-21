@@ -51,9 +51,17 @@
     function create ()
     {	
 			debugger;
+			//이미지 추가
 			this.add.image(400, 300, 'background'); 
 			this.add.image(400, 300, 'cham1').setScale(0.5);
-			ground = this.add.tileSprite(0,100, game.width,50, 'ground');
+			ground = this.add.tileSprite(200,200, game.width,200, 'ground2');
+
+			this.input.on('pointerup', function (pointer) {
+				console.log("test");
+				debugger;
+			});
+
+
 
 			return;
 			this.add.image (400, 300, 'sky'); 
